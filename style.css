@@ -1,0 +1,54 @@
+:root {
+  --bg: #E6EDF0;
+  --card: #FFFFFF;
+  --ink: #4A3B21;
+  --ink-soft: #6B5A3A;
+  --accent: #CC452E;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C2232;
+    --card: #262E42;
+    --ink: #F5F2E6;
+    --ink-soft: #D1D8EC;
+    --accent: #F08A73;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1 {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+h2 {
+  font-size: 18px;
+  margin: 32px 0 8px;
+}
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 1.4em; }
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+.meta { color: var(--ink-soft); font-size: 15px; }
+a { color: var(--accent); }
+footer {
+  margin-top: 24px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
