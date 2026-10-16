@@ -53,3 +53,13 @@ footer {
   color: var(--ink-soft);
   font-size: 15px;
 }
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+.lang span { font-weight: 600; color: var(--ink); }
+:lang(ko) { word-break: keep-all; }   /* 韓国語は単語の途中で改行しない */
